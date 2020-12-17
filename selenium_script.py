@@ -26,8 +26,8 @@ class Test_SignUp_Page(unittest.TestCase):
     # User expects the Sign Up page to contain a signup button labelled 'Sign Up Here'
     def test_signup_page_contains_signup_button(self):
         self.driver.get('http://127.0.0.1:8000/signup/signup')
-        element
-        self.assertTrue
+        self.driver.find_element_by_tag_name('button')
+        self.assertTrue()
 
     def tearDown(self):
         self.driver.quit()
